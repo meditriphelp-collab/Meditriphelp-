@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditriphelp - Global Medical Tourism & Healthcare Assistance</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #075985 0%, #0284c7 50%, #0d9488 100%);
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 30px -5px rgba(2, 132, 199, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Top Info Bar -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2.5 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2"><i class="fa-solid font-bold fa-phone text-brand-500"></i> +91 98305 33505 / 24x7 Helpline</span>
+                <span class="hidden md:flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-500"></i> meditriphelp@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-globe text-accent-500"></i> Medical Visa Support</span>
+                <span class="text-slate-600">|</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-plane text-accent-500"></i> Airport Transfer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-brand-500/30">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight text-slate-900">Medi<span class="text-brand-600">trip</span>help</span>
+                    <span class="block text-[10px] font-semibold text-slate-400 uppercase tracking-widest">Medical Tourism India</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                <a href="#home" class="hover:text-brand-600 transition-colors">Home</a>
+                <a href="#hospitals" class="hover:text-brand-600 transition-colors">Hospitals</a>
+                <a href="#doctors" class="hover:text-brand-600 transition-colors">Doctors</a>
+                <a href="#surgeries" class="hover:text-brand-600 transition-colors">Surgeries & Cost</a>
+                <a href="#contact" class="hover:text-brand-600 transition-colors">Contact Us</a>
+            </nav>
+
+            <!-- Book CTA Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#book" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-all shadow-md hover:shadow-lg shadow-brand-500/20 flex items-center gap-2">
+                    <i class="fa-regular fa-calendar-check"></i> Book Appointment
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="lg:hidden text-slate-700 text-2xl focus:outline-none p-1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 font-medium text-slate-700">
+            <a href="#home" class="block hover:text-brand-600 py-1">Home</a>
+            <a href="#hospitals" class="block hover:text-brand-600 py-1">Hospitals</a>
+            <a href="#doctors" class="block hover:text-brand-600 py-1">Doctors</a>
+            <a href="#surgeries" class="block hover:text-brand-600 py-1">Surgeries & Cost</a>
+            <a href="#contact" class="block hover:text-brand-600 py-1">Contact Us</a>
+            <a href="#book" class="block bg-brand-600 text-white text-center py-2.5 rounded-xl font-semibold mt-2">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative gradient-bg text-white py-20 lg:py-28 overflow-hidden">
+        <!-- Abstract Background Shapes -->
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 -top-20 w-80 h-80 bg-brand-400/20 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-semibold px-4 py-1.5 rounded-full">
+                        <i class="fa-solid fa-shield-halved text-accent-500"></i> JCI & NABH Accredited Hospital Network
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        World-Class Healthcare Solutions in India
+                    </h1>
+                    <p class="text-slate-100 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Connect with India's top doctors and JCI-accredited hospitals in Kolkata, Chennai, Bangalore, & Hyderabad. Complete medical travel, visa, and treatment assistance.
+                    </p>
+                    
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#book" class="w-full sm:w-auto bg-white text-brand-700 hover:bg-slate-100 font-bold px-8 py-3.5 rounded-xl transition-all shadow-xl text-center">
+                            Get Free Treatment Quote
+                        </a>
+                        <a href="#doctors" class="w-full sm:w-auto bg-brand-800/40 hover:bg-brand-800/60 border border-white/30 text-white font-medium px-8 py-3.5 rounded-xl transition-all backdrop-blur-sm text-center">
+                            Find Specialists
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/10 max-w-lg mx-auto lg:mx-0 text-center">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">50+</p>
+                            <p class="text-xs text-slate-200 mt-1">Partner Hospitals</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">500+</p>
+                            <p class="text-xs text-slate-200 mt-1">Renowned Doctors</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">15,000+</p>
+                            <p class="text-xs text-slate-200 mt-1">Patients Assisted</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Quick Search Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 text-slate-800 border border-slate-100">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Find Treatment & Doctors</h3>
+                        <p class="text-xs text-slate-500 mb-6">Receive expert medical advice & cost estimation within 24 hours.</p>
+
+                        <form id="heroQuickForm" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Target City</label>
+                                <select id="heroCity" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                                    <option value="all">All Cities</option>
+                                    <option value="Kolkata">Kolkata</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Medical Specialty</label>
+                                <select id="heroSpecialty" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                                    <option value="all">All Specialties</option>
+                                    <option value="Cardiology">Cardiology & Cardiac Surgery</option>
+                                    <option value="Oncology">Oncology (Cancer Treatment)</option>
+                                    <option value="Orthopedics">Orthopedics & Joint Replacement</option>
+                                    <option value="Neurology">Neurology & Neurosurgery</option>
+                                    <option value="Gastroenterology">Gastroenterology & Liver Transplant</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Patient Phone / WhatsApp</label>
+                                <input type="tel" placeholder="+91 / International number" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                            <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 rounded-xl transition-colors shadow-lg shadow-brand-500/20 text-sm">
+                                Request Callback & Medical Estimate
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitals Section -->
+    <section id="hospitals" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Premier Healthcare Facilities</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Renowned Partner Hospitals</h3>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">We collaborate with JCI and NABH accredited hospitals offering advanced infrastructure and international patient care services across India.</p>
+            </div>
+
+            <!-- City Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="filterHospitals('all')" class="hospital-tab-btn active bg-brand-600 text-white px-5 py-2 rounded-xl text-sm font-semibold transition-all">All Cities</button>
+                <button onclick="filterHospitals('Kolkata')" class="hospital-tab-btn bg-white text-slate-600 border border-slate-200 hover:border-brand-500 px-5 py-2 rounded-xl text-sm font-semibold transition-all">Kolkata</button>
+                <button onclick="filterHospitals('Chennai')" class="hospital-tab-btn bg-white text-slate-600 border border-slate-200 hover:border-brand-500 px-5 py-2 rounded-xl text-sm font-semibold transition-all">Chennai</button>
+                <button onclick="filterHospitals('Bangalore')" class="hospital-tab-btn bg-white text-slate-600 border border-slate-200 hover:border-brand-500 px-5 py-2 rounded-xl text-sm font-semibold transition-all">Bangalore</button>
+                <button onclick="filterHospitals('Hyderabad')" class="hospital-tab-btn bg-white text-slate-600 border border-slate-200 hover:border-brand-500 px-5 py-2 rounded-xl text-sm font-semibold transition-all">Hyderabad</button>
+            </div>
+
+            <!-- Hospitals Grid -->
+            <div id="hospitalsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically generated or pre-populated via JS for filterability -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Expert Medical Practitioners</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Top Renowned Doctors</h3>
+                    <p class="text-slate-600 mt-2 text-sm max-w-xl">Find world-renowned specialists holding international degrees and decades of surgical excellence.</p>
+                </div>
+            </div>
+
+            <!-- Doctor Search & Filter Bar -->
+            <div class="bg-slate-50 border border-slate-200 p-4 rounded-2xl mb-10 grid md:grid-cols-12 gap-4 items-center">
+                <div class="md:col-span-5 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-slate-400"></i>
+                    <input type="text" id="doctorSearchInput" onkeyup="filterDoctors()" placeholder="Search by Doctor Name, Degree, or Keyword..." class="w-full bg-white border border-slate-200 pl-11 pr-4 py-2.5 rounded-xl text-sm focus:outline-none focus:border-brand-500">
+                </div>
+                <div class="md:col-span-4">
+                    <select id="doctorSpecialtyFilter" onchange="filterDoctors()" class="w-full bg-white border border-slate-200 px-4 py-2.5 rounded-xl text-sm focus:outline-none focus:border-brand-500">
+                        <option value="all">All Specialties</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Oncology">Oncology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Gastroenterology">Gastroenterology</option>
+                    </select>
+                </div>
+                <div class="md:col-span-3">
+                    <select id="doctorCityFilter" onchange="filterDoctors()" class="w-full bg-white border border-slate-200 px-4 py-2.5 rounded-xl text-sm focus:outline-none focus:border-brand-500">
+                        <option value="all">All Locations</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Doctor Cards Container -->
+            <div id="doctorsGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Surgeries & Procedures Section -->
+    <section id="surgeries" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Transparent Treatments</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Major Surgeries & Medical Procedures</h3>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">Compare treatment packages, stay durations, and standard success rates for key surgeries in India.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Cardiac Surgery (CABG / Bypass)</h4>
+                    <p class="text-xs text-slate-500 mb-4">Minimally invasive coronary artery bypass surgery performed by top cardiac surgeons.</p>
+                    <div class="space-y-2 border-t border-slate-100 pt-4 text-xs">
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Est. Cost Range:</span> <span class="font-bold text-brand-600">$4,500 - $6,500</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Hospital Stay:</span> <span>7 - 10 Days</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Top Hubs:</span> <span>Chennai, Bangalore</span></div>
+                    </div>
+                    <a href="#book" class="mt-6 block text-center bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl text-xs transition-colors">Inquire Surgery Details</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Total Knee / Hip Replacement</h4>
+                    <p class="text-xs text-slate-500 mb-4">Robotic-assisted joint replacement surgery with fast rehabilitation protocols.</p>
+                    <div class="space-y-2 border-t border-slate-100 pt-4 text-xs">
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Est. Cost Range:</span> <span class="font-bold text-brand-600">$4,000 - $5,800</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Hospital Stay:</span> <span>5 - 7 Days</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Top Hubs:</span> <span>Kolkata, Hyderabad</span></div>
+                    </div>
+                    <a href="#book" class="mt-6 block text-center bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl text-xs transition-colors">Inquire Surgery Details</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Oncology & Chemotherapy</h4>
+                    <p class="text-xs text-slate-500 mb-4">Comprehensive cancer care incorporating immunotherapy, CyberKnife, and targeted treatments.</p>
+                    <div class="space-y-2 border-t border-slate-100 pt-4 text-xs">
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Est. Cost Range:</span> <span class="font-bold text-brand-600">Custom Evaluation</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Treatment Plan:</span> <span>Multi-Phase</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Top Hubs:</span> <span>Bangalore, Kolkata</span></div>
+                    </div>
+                    <a href="#book" class="mt-6 block text-center bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl text-xs transition-colors">Inquire Surgery Details</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Liver / Kidney Transplant</h4>
+                    <p class="text-xs text-slate-500 mb-4">High-success living donor organ transplant procedures adhering to legal & medical protocols.</p>
+                    <div class="space-y-2 border-t border-slate-100 pt-4 text-xs">
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Est. Cost Range:</span> <span class="font-bold text-brand-600">$18,000 - $28,000</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Hospital Stay:</span> <span>14 - 21 Days</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Top Hubs:</span> <span>Chennai, Hyderabad</span></div>
+                    </div>
+                    <a href="#book" class="mt-6 block text-center bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl text-xs transition-colors">Inquire Surgery Details</a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Neurosurgery & Spine Fixation</h4>
+                    <p class="text-xs text-slate-500 mb-4">Precision brain tumor excision and endoscopic spine surgeries with neuro-navigation.</p>
+                    <div class="space-y-2 border-t border-slate-100 pt-4 text-xs">
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Est. Cost Range:</span> <span class="font-bold text-brand-600">$6,500 - $11,000</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Hospital Stay:</span> <span>7 - 12 Days</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Top Hubs:</span> <span>Bangalore, Chennai</span></div>
+                    </div>
+                    <a href="#book" class="mt-6 block text-center bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl text-xs transition-colors">Inquire Surgery Details</a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-baby"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">IVF & Reproductive Medicine</h4>
+                    <p class="text-xs text-slate-500 mb-4">Advanced fertility treatments, ICSI, and genetic screening with high success rates.</p>
+                    <div class="space-y-2 border-t border-slate-100 pt-4 text-xs">
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Est. Cost Range:</span> <span class="font-bold text-brand-600">$3,000 - $4,500</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Hospital Stay:</span> <span>Outpatient / Days</span></div>
+                        <div class="flex justify-between text-slate-600"><span class="font-medium">Top Hubs:</span> <span>Hyderabad, Kolkata</span></div>
+                    </div>
+                    <a href="#book" class="mt-6 block text-center bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold py-2.5 rounded-xl text-xs transition-colors">Inquire Surgery Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Appointment Section -->
+    <section id="book" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-8">
+            <div class="bg-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+                <div class="max-w-2xl relative z-10">
+                    <span class="text-accent-500 font-bold text-xs uppercase tracking-widest">Free Tele-Consultation Booking</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mt-2 mb-4">Book An Appointment With Top Specialists</h2>
+                    <p class="text-slate-300 text-sm mb-8 leading-relaxed">Fill out the details below. Our medical coordinators will facilitate tele-consultations, doctor opinion reports, and medical visa invitation letters.</p>
+
+                    <form id="appointmentForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Full Patient Name *</label>
+                                <input type="text" required placeholder="e.g. John Doe" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Email Address *</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Phone / WhatsApp *</label>
+                                <input type="tel" required placeholder="+91 00000 00000" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Preferred City</label>
+                                <select class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                                    <option value="Kolkata">Kolkata</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Medical Department</label>
+                                <select class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Oncology">Oncology</option>
+                                    <option value="Orthopedics">Orthopedics</option>
+                                    <option value="Neurology">Neurology</option>
+                                    <option value="Gastroenterology">Gastroenterology</option>
+                                    <option value="Other">Other Medical Issue</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Preferred Consultation Date</label>
+                                <input type="date" required class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Brief Medical Symptoms / History</label>
+                            <textarea rows="3" placeholder="Describe symptoms or ongoing medical conditions..." class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-brand-600/30 text-sm">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+
+                    <!-- Alert Box Container -->
+                    <div id="bookingAlert" class="hidden mt-4 bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 p-4 rounded-xl text-xs flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-lg"></i>
+                        <span>Thank you! Your booking request has been submitted. Our team will contact you shortly.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Get In Touch</h2>
+                        <h3 class="text-3xl font-extrabold text-slate-900">Contact Meditriphelp</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Our dedicated international patient helpdesk assists you round-the-clock with travel logistics, accommodations, and medical consultations.</p>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Headquarters & Coordination Office</h4>
+                                <p class="text-xs text-slate-500 mt-1">Park Street Medical Hub, 4th Floor, Kolkata, West Bengal 700016, India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Emergency Assistance Helpline</h4>
+                                <p class="text-xs text-slate-500 mt-1">+91 98305 33505</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Email Inquiries</h4>
+                                <p class="text-xs text-slate-500 mt-1">meditriphelp@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Support Form -->
+                <div class="lg:col-span-7 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-6">Send Us A Direct Message</h3>
+                    <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Your Name</label>
+                                <input type="text" required placeholder="Full Name" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Email Address</label>
+                                <input type="email" required placeholder="Email Address" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Subject</label>
+                            <input type="text" required placeholder="e.g. Visa Assistance / Treatment Opinion" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Message</label>
+                            <textarea rows="4" required placeholder="How can our team help you?" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md text-sm">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="contactAlert" class="hidden mt-4 bg-slate-800 text-white p-4 rounded-xl text-xs">
+                        Message sent successfully! We will get back to you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <span class="text-xl font-bold text-white tracking-tight">Medi<span class="text-brand-500">trip</span>help</span>
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">Providing end-to-end medical tourism facilitation, connecting global patients with premier healthcare institutes in Kolkata, Chennai, Bangalore, and Hyderabad.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-4">Cities Covered</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#hospitals" class="hover:text-white transition-colors">Kolkata Medical Hubs</a></li>
+                        <li><a href="#hospitals" class="hover:text-white transition-colors">Chennai Healthcare Centers</a></li>
+                        <li><a href="#hospitals" class="hover:text-white transition-colors">Bangalore Multi-specialty</a></li>
+                        <li><a href="#hospitals" class="hover:text-white transition-colors">Hyderabad Super Specialty</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-4">Medical Specialties</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#doctors" class="hover:text-white transition-colors">Cardiology & Bypass</a></li>
+                        <li><a href="#doctors" class="hover:text-white transition-colors">Oncology & Chemotherapy</a></li>
+                        <li><a href="#doctors" class="hover:text-white transition-colors">Joint Replacement & Ortho</a></li>
+                        <li><a href="#doctors" class="hover:text-white transition-colors">Neurosurgery & Spine</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#hospitals" class="hover:text-white transition-colors">Top Hospitals</a></li>
+                        <li><a href="#doctors" class="hover:text-white transition-colors">Renowned Doctors</a></li>
+                        <li><a href="#book" class="hover:text-white transition-colors">Book Consultation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Meditriphelp Organization. All rights reserved. Designed for Patient Care & Support.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Data & Logic -->
+    <script>
+        // Sample Data: Hospitals
+        const hospitalsData = [
+            // Kolkata Hospitals
+            {
+                name: "Manipal Hospital",
+                city: "Kolkata",
+                rating: 4.8,
+                reviews: 1420,
+                specialties: ["Multi-specialty", "Cardiology", "Neurology"],
+                image: "https://placehold.co/600x400/0284c7/ffffff?text=Manipal+Hospital+Kolkata",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "Ruby General Hospital",
+                city: "Kolkata",
+                rating: 4.6,
+                reviews: 980,
+                specialties: ["Emergency Care", "Orthopedics", "General Surgery"],
+                image: "https://placehold.co/600x400/0369a1/ffffff?text=Ruby+General+Hospital",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "Desun Hospital",
+                city: "Kolkata",
+                rating: 4.7,
+                reviews: 1150,
+                specialties: ["Cardiac Care", "Critical Care", "Gastroenterology"],
+                image: "https://placehold.co/600x400/075985/ffffff?text=Desun+Hospital+Kolkata",
+                accreditation: "NABH & NABL Accredited"
+            },
+            {
+                name: "Peerless Hospital",
+                city: "Kolkata",
+                rating: 4.6,
+                reviews: 870,
+                specialties: ["Orthopedics", "Cardiology", "Transplant"],
+                image: "https://placehold.co/600x400/0c4a6e/ffffff?text=Peerless+Hospital",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "Fortis Hospital",
+                city: "Kolkata",
+                rating: 4.8,
+                reviews: 1640,
+                specialties: ["Cardiology", "Urology", "Nephrology"],
+                image: "https://placehold.co/600x400/0284c7/ffffff?text=Fortis+Hospital+Kolkata",
+                accreditation: "JCI & NABH Accredited"
+            },
+            {
+                name: "Netaji Subhash Chandra Bose Cancer Hospital",
+                city: "Kolkata",
+                rating: 4.7,
+                reviews: 790,
+                specialties: ["Oncology", "Surgical Oncology", "Chemotherapy"],
+                image: "https://placehold.co/600x400/0369a1/ffffff?text=Netaji+Subhash+Cancer+Hosp",
+                accreditation: "Specialized Cancer Hub"
+            },
+            {
+                name: "B. P. Poddar Hospital",
+                city: "Kolkata",
+                rating: 4.5,
+                reviews: 620,
+                specialties: ["General Medicine", "Trauma Care", "Orthopedics"],
+                image: "https://placehold.co/600x400/075985/ffffff?text=BP+Poddar+Hospital",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "CMRI (Calcutta Medical Research Institute)",
+                city: "Kolkata",
+                rating: 4.8,
+                reviews: 1890,
+                specialties: ["Neurosurgery", "Orthopedics", "Pulmonology"],
+                image: "https://placehold.co/600x400/0c4a6e/ffffff?text=CMRI+Kolkata",
+                accreditation: "NABH & NABL Accredited"
+            },
+            {
+                name: "HCG Cancer Centre",
+                city: "Kolkata",
+                rating: 4.8,
+                reviews: 950,
+                specialties: ["Radiation Oncology", "Medical Oncology", "CyberKnife"],
+                image: "https://placehold.co/600x400/0284c7/ffffff?text=HCG+Cancer+Centre",
+                accreditation: "Specialized Oncology Centre"
+            },
+
+            // Chennai Hospitals
+            {
+                name: "MGM Healthcare",
+                city: "Chennai",
+                rating: 4.9,
+                reviews: 1540,
+                specialties: ["Heart & Lung Transplant", "Neurosciences", "Cardiology"],
+                image: "https://placehold.co/600x400/0369a1/ffffff?text=MGM+Healthcare+Chennai",
+                accreditation: "JCI & NABH Accredited"
+            },
+            {
+                name: "MGM Cancer Institute",
+                city: "Chennai",
+                rating: 4.9,
+                reviews: 820,
+                specialties: ["Comprehensive Oncology", "Proton Therapy", "Bone Marrow Transplant"],
+                image: "https://placehold.co/600x400/075985/ffffff?text=MGM+Cancer+Institute",
+                accreditation: "Advanced Oncology Hub"
+            },
+            {
+                name: "Frontier Lifeline Hospital (CHF)",
+                city: "Chennai",
+                rating: 4.8,
+                reviews: 1310,
+                specialties: ["Pediatric Cardiac", "Adult Cardiac Surgery", "Research"],
+                image: "https://placehold.co/600x400/0c4a6e/ffffff?text=Frontier+Lifeline+(CHF)",
+                accreditation: "Cardiac Specialty Centre"
+            },
+            {
+                name: "Kauvery Hospital",
+                city: "Chennai",
+                rating: 4.8,
+                reviews: 1450,
+                specialties: ["Gastroenterology", "Geriatrics", "Cardiology"],
+                image: "https://placehold.co/600x400/0284c7/ffffff?text=Kauvery+Hospital+Chennai",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "Apollo Hospital Greams Road",
+                city: "Chennai",
+                rating: 4.9,
+                reviews: 3200,
+                specialties: ["Robotic Surgery", "Cardiology", "Organ Transplant"],
+                image: "https://placehold.co/600x400/0369a1/ffffff?text=Apollo+Hospital+Chennai",
+                accreditation: "JCI & NABH Accredited"
+            },
+            {
+                name: "SIMS Hospital (SRM Institutes for Medical Science)",
+                city: "Chennai",
+                rating: 4.8,
+                reviews: 1120,
+                specialties: ["Orthopedics", "Plastic Surgery", "Neuro Sciences"],
+                image: "https://placehold.co/600x400/075985/ffffff?text=SIMS+Hospital+Chennai",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "MIOT International",
+                city: "Chennai",
+                rating: 4.9,
+                reviews: 2150,
+                specialties: ["Orthopedics & Joint Replacement", "Trauma", "Cardiology"],
+                image: "https://placehold.co/600x400/0c4a6e/ffffff?text=MIOT+International",
+                accreditation: "NABH & NABL Accredited"
+            },
+            {
+                name: "Dr. Rela Institute & Medical Centre",
+                city: "Chennai",
+                rating: 4.9,
+                reviews: 1780,
+                specialties: ["Liver Transplant", "Hepato-Biliary", "Pediatric Care"],
+                image: "https://placehold.co/600x400/0284c7/ffffff?text=Rela+Institute+Chennai",
+                accreditation: "JCI Accredited Transplant Hub"
+            },
+
+            // Hyderabad Hospitals
+            {
+                name: "Yashoda Hospital",
+                city: "Hyderabad",
+                rating: 4.8,
+                reviews: 2100,
+                specialties: ["Oncology", "Cardiology", "Pulmonology"],
+                image: "https://placehold.co/600x400/0369a1/ffffff?text=Yashoda+Hospital+Hyderabad",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "Aster Prime Hospital",
+                city: "Hyderabad",
+                rating: 4.7,
+                reviews: 1040,
+                specialties: ["Emergency Medicine", "Orthopedics", "Neurology"],
+                image: "https://placehold.co/600x400/075985/ffffff?text=Aster+Prime+Hyderabad",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "Medicover Hospitals",
+                city: "Hyderabad",
+                rating: 4.8,
+                reviews: 1580,
+                specialties: ["Multi-specialty", "Gastroenterology", "Cardiology"],
+                image: "https://placehold.co/600x400/0c4a6e/ffffff?text=Medicover+Hospitals+Hyderabad",
+                accreditation: "NABH Accredited"
+            },
+
+            // Bangalore Hospitals
+            {
+                name: "Manipal Hospital",
+                city: "Bangalore",
+                rating: 4.9,
+                reviews: 2450,
+                specialties: ["Neurosurgery", "Oncology", "Pediatrics"],
+                image: "https://placehold.co/600x400/0284c7/ffffff?text=Manipal+Hospital+Bangalore",
+                accreditation: "NABH & AAHRPP Accredited"
+            },
+            {
+                name: "Narayana Health City",
+                city: "Bangalore",
+                rating: 4.9,
+                reviews: 3100,
+                specialties: ["Cardiac Surgery", "Pediatric Cardiology", "Bone Marrow Transplant"],
+                image: "https://placehold.co/600x400/0369a1/ffffff?text=Narayana+Health+Bangalore",
+                accreditation: "JCI & NABH Accredited"
+            },
+            {
+                name: "Gleneagles Hospital",
+                city: "Bangalore",
+                rating: 4.8,
+                reviews: 1390,
+                specialties: ["Liver Transplant", "Gastroenterology", "Urology"],
+                image: "https://placehold.co/600x400/075985/ffffff?text=Gleneagles+Hospital+Bangalore",
+                accreditation: "NABH Accredited"
+            },
+            {
+                name: "Apollo Hospital",
+                city: "Bangalore",
+                rating: 4.8,
+                reviews: 1980,
+                specialties: ["Orthopedics", "Interventional Cardiology", "Oncology"],
+                image: "https://placehold.co/600x400/0c4a6e/ffffff?text=Apollo+Hospital+Bangalore",
+                accreditation: "JCI & NABH Accredited"
+            },
+            {
+                name: "Aster CMI Hospital",
+                city: "Bangalore",
+                rating: 4.9,
+                reviews: 1670,
+                specialties: ["Robotic Surgery", "Neurosciences", "Transplant Medicine"],
+                image: "https://placehold.co/600x400/0284c7/ffffff?text=Aster+CMI+Hospital+Bangalore",
+                accreditation: "JCI & NABH Accredited"
+            }
+        ];
+
+        // Sample Data: Doctors
+        const doctorsData = [
+            // Kolkata Doctors
+            {
+                name: "Dr. Kunal Sarkar",
+                degree: "MBBS, M.Ch, FRCS (Cardiothoracic Surgeon)",
+                specialty: "Cardiology",
+                experience: "30+ Years Experience",
+                city: "Kolkata",
+                hospital: "Desun Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Kunal+Sarkar"
+            },
+            {
+                name: "Dr. Sandip Basu",
+                degree: "MD, DNB (Radiation Oncology)",
+                specialty: "Oncology",
+                experience: "22+ Years Experience",
+                city: "Kolkata",
+                hospital: "HCG Cancer Centre",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Sandip+Basu"
+            },
+            {
+                name: "Dr. Vikas Kapoor",
+                degree: "MS (Ortho), Fellowship in Joint Replacement (UK)",
+                specialty: "Orthopedics",
+                experience: "24+ Years Experience",
+                city: "Kolkata",
+                hospital: "Fortis Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Vikas+Kapoor"
+            },
+            {
+                name: "Dr. Robin Sengupta",
+                degree: "MBBS, FRCS, PhD (Neurosurgery)",
+                specialty: "Neurology",
+                experience: "35+ Years Experience",
+                city: "Kolkata",
+                hospital: "CMRI",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+R.+Sengupta"
+            },
+            {
+                name: "Dr. Mahesh Kumar Goenka",
+                degree: "MD, DM (Gastroenterology), FASGE",
+                specialty: "Gastroenterology",
+                experience: "33+ Years Experience",
+                city: "Kolkata",
+                hospital: "Manipal Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+MK+Goenka"
+            },
+            {
+                name: "Dr. Chintamani Godbole",
+                degree: "MS, M.Ch (Surgical Oncology)",
+                specialty: "Oncology",
+                experience: "18+ Years Experience",
+                city: "Kolkata",
+                hospital: "Netaji Subhash Cancer Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+C.+Godbole"
+            },
+
+            // Chennai Doctors
+            {
+                name: "Dr. K. M. Cherian",
+                degree: "FRACS, Ph.D (Heart & Lung Transplant Surgeon)",
+                specialty: "Cardiology",
+                experience: "40+ Years Experience",
+                city: "Chennai",
+                hospital: "Frontier Lifeline Hospital (CHF)",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+KM+Cherian"
+            },
+            {
+                name: "Dr. Mohamed Rela",
+                degree: "MS, FRCS (Liver Transplant & Hepatobiliary)",
+                specialty: "Gastroenterology",
+                experience: "32+ Years Experience",
+                city: "Chennai",
+                hospital: "Dr. Rela Institute",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Mohamed+Rela"
+            },
+            {
+                name: "Dr. K. R. Balakrishnan",
+                degree: "MS, M.Ch (Heart Transplant & Mechanical Circulatory Support)",
+                specialty: "Cardiology",
+                experience: "35+ Years Experience",
+                city: "Chennai",
+                hospital: "MGM Healthcare",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+KR+Balakrishnan"
+            },
+            {
+                name: "Dr. A. B. Govindaraj",
+                degree: "FRCS (Glasgow), M.Ch (Ortho - Joint Replacement)",
+                specialty: "Orthopedics",
+                experience: "30+ Years Experience",
+                city: "Chennai",
+                hospital: "MIOT International",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Govindaraj"
+            },
+            {
+                name: "Dr. Vijay K. Silambaban",
+                degree: "MD, DM (Medical Oncology & Hematology)",
+                specialty: "Oncology",
+                experience: "20+ Years Experience",
+                city: "Chennai",
+                hospital: "MGM Cancer Institute",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Vijay+K"
+            },
+            {
+                name: "Dr. Raju Sivasamy",
+                degree: "MS (Ortho), M.Ch (Robotic Surgery Specialist)",
+                specialty: "Orthopedics",
+                experience: "25+ Years Experience",
+                city: "Chennai",
+                hospital: "SIMS Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Raju+S"
+            },
+            {
+                name: "Dr. S. Senthil Kumar",
+                degree: "MD, DM (Interventional Cardiology)",
+                specialty: "Cardiology",
+                experience: "22+ Years Experience",
+                city: "Chennai",
+                hospital: "Kauvery Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Senthil+K"
+            },
+
+            // Hyderabad Doctors
+            {
+                name: "Dr. D. Nageshwar Reddy",
+                degree: "MD, DM, D.Sc (Gastroenterologist & Endoscopist)",
+                specialty: "Gastroenterology",
+                experience: "38+ Years Experience",
+                city: "Hyderabad",
+                hospital: "Medicover Hospitals",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+N.+Reddy"
+            },
+            {
+                name: "Dr. Subramanian Swaminathan",
+                degree: "MD, DM (Surgical Oncology & CyberKnife Specialist)",
+                specialty: "Oncology",
+                experience: "20+ Years Experience",
+                city: "Hyderabad",
+                hospital: "Yashoda Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Subramanian"
+            },
+            {
+                name: "Dr. Umamaheshwar Rao",
+                degree: "MS (Ortho), Fellowship in Spine & Joint Surgeries",
+                specialty: "Orthopedics",
+                experience: "26+ Years Experience",
+                city: "Hyderabad",
+                hospital: "Aster Prime Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Umamaheshwar"
+            },
+            {
+                name: "Dr. Pramod Kumar Reddy",
+                degree: "MD, DM (Interventional Cardiology)",
+                specialty: "Cardiology",
+                experience: "24+ Years Experience",
+                city: "Hyderabad",
+                hospital: "Yashoda Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Pramod+Reddy"
+            },
+
+            // Bangalore Doctors
+            {
+                name: "Dr. Devi Prasad Shetty",
+                degree: "MS, FRCS (Cardiac Surgeon)",
+                specialty: "Cardiology",
+                experience: "35+ Years Experience",
+                city: "Bangalore",
+                hospital: "Narayana Health",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Devi+Shetty"
+            },
+            {
+                name: "Dr. H. V. Madhusudan",
+                degree: "M.Ch (Neurosurgery), FINR (Spine Specialist)",
+                specialty: "Neurology",
+                experience: "25+ Years Experience",
+                city: "Bangalore",
+                hospital: "Manipal Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Madhusudan"
+            },
+            {
+                name: "Dr. Somanath Chattopadhyay",
+                degree: "MS, FRCS, Liver Transplant Specialist",
+                specialty: "Gastroenterology",
+                experience: "21+ Years Experience",
+                city: "Bangalore",
+                hospital: "Gleneagles Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Somanath+C"
+            },
+            {
+                name: "Dr. Somashekhar S. P.",
+                degree: "MS, M.Ch, FRCS (Robotic Surgical Oncology)",
+                specialty: "Oncology",
+                experience: "27+ Years Experience",
+                city: "Bangalore",
+                hospital: "Aster CMI Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Somashekhar"
+            },
+            {
+                name: "Dr. Sanjay Pai",
+                degree: "MS (Ortho), MNAMS (Robotic Joint Replacement)",
+                specialty: "Orthopedics",
+                experience: "28+ Years Experience",
+                city: "Bangalore",
+                hospital: "Apollo Hospital",
+                image: "https://placehold.co/300x300/e0f2fe/0369a1?text=Dr.+Sanjay+Pai"
+            }
+        ];
+
+        // Render Hospitals
+        function renderHospitals(cityFilter = 'all') {
+            const container = document.getElementById('hospitalsGrid');
+            container.innerHTML = '';
+
+            const filtered = cityFilter === 'all' 
+                ? hospitalsData 
+                : hospitalsData.filter(h => h.city.toLowerCase() === cityFilter.toLowerCase());
+
+            filtered.forEach(h => {
+                const card = `
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col">
+                        <img src="${h.image}" alt="${h.name}" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="bg-brand-50 text-brand-600 text-xs font-bold px-2.5 py-1 rounded-md">${h.city}</span>
+                                    <span class="text-xs font-semibold text-amber-500 flex items-center gap-1"><i class="fa-solid fa-star"></i> ${h.rating} (${h.reviews})</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900">${h.name}</h3>
+                                <p class="text-xs text-slate-500 mt-1 font-medium"><i class="fa-solid fa-award text-accent-500 mr-1"></i> ${h.accreditation}</p>
+                                
+                                <div class="mt-4 flex flex-wrap gap-1.5">
+                                    ${h.specialties.map(s => `<span class="bg-slate-100 text-slate-600 text-[11px] px-2 py-0.5 rounded-full font-medium">${s}</span>`).join('')}
+                                </div>
+                            </div>
+                            <a href="#book" class="mt-6 w-full text-center bg-brand-50 hover:bg-brand-600 text-brand-700 hover:text-white font-semibold py-2.5 rounded-xl text-xs transition-colors block">
+                                Request Hospital Consultation
+                            </a>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        // Render Doctors
+        function renderDoctors(doctorsList) {
+            const container = document.getElementById('doctorsGrid');
+            container.innerHTML = '';
+
+            if(doctorsList.length === 0) {
+                container.innerHTML = `<div class="col-span-full text-center py-12 text-slate-500 text-sm">No doctor found matching your criteria.</div>`;
+                return;
+            }
+
+            doctorsList.forEach(d => {
+                const card = `
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 hover:shadow-lg transition-all text-center flex flex-col items-center">
+                        <img src="${d.image}" alt="${d.name}" class="w-24 h-24 rounded-full object-cover mb-4 border-2 border-brand-500/20">
+                        <h4 class="font-bold text-slate-900 text-base">${d.name}</h4>
+                        <p class="text-xs text-brand-600 font-semibold mt-0.5">${d.degree}</p>
+                        <p class="text-xs text-slate-500 mt-2 font-medium">${d.specialty} • ${d.experience}</p>
+                        <div class="mt-3 text-[11px] text-slate-600 bg-slate-50 border border-slate-100 px-3 py-1.5 rounded-lg w-full">
+                            <i class="fa-solid fa-hospital text-slate-400 mr-1"></i> ${d.hospital}, <strong>${d.city}</strong>
+                        </div>
+                        <a href="#book" class="mt-4 w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-2 rounded-xl text-xs transition-colors">
+                            Book Doctor
+                        </a>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        // Filter Hospitals Button Action
+        function filterHospitals(city) {
+            document.querySelectorAll('.hospital-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            });
+            event.target.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            event.target.classList.add('bg-brand-600', 'text-white');
+
+            renderHospitals(city);
+        }
+
+        // Filter Doctors Search
+        function filterDoctors() {
+            const query = document.getElementById('doctorSearchInput').value.toLowerCase();
+            const specialty = document.getElementById('doctorSpecialtyFilter').value.toLowerCase();
+            const city = document.getElementById('doctorCityFilter').value.toLowerCase();
+
+            const filtered = doctorsData.filter(d => {
+                const matchesQuery = d.name.toLowerCase().includes(query) || d.degree.toLowerCase().includes(query) || d.specialty.toLowerCase().includes(query);
+                const matchesSpecialty = specialty === 'all' || d.specialty.toLowerCase() === specialty;
+                const matchesCity = city === 'all' || d.city.toLowerCase() === city;
+                return matchesQuery && matchesSpecialty && matchesCity;
+            });
+
+            renderDoctors(filtered);
+        }
+
+        // Handle Appointment Form Submit
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const alertBox = document.getElementById('bookingAlert');
+            alertBox.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                alertBox.classList.add('hidden');
+            }, 6000);
+        }
+
+        // Handle Contact Form Submit
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const alertBox = document.getElementById('contactAlert');
+            alertBox.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                alertBox.classList.add('hidden');
+            }, 6000);
+        }
+
+        // Mobile Navigation Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Initial Load
+        window.onload = function() {
+            renderHospitals('all');
+            renderDoctors(doctorsData);
+        };
+    </script>
+</body>
+</html>
